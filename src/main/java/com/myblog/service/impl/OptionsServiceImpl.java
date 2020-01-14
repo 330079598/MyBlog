@@ -21,7 +21,7 @@ public class OptionsServiceImpl implements OptionsService {
 	private OptionsMapper optionsMapper;
 
 	@Override
-	@Cacheable(value = "default" , key = "'options'")
+	@Cacheable(value = "default", key = "'options'")
 	public Options getOptions() {
 		return optionsMapper.getOptions();
 	}

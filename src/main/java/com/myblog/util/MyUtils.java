@@ -1,4 +1,4 @@
-package com.myblog.controller.util;
+package com.myblog.util;
 
 import javax.servlet.http.HttpServletRequest;
 import java.security.MessageDigest;

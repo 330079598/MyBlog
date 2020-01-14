@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.myblog.controller.util.MyUtils.getIpAddr;
+import static com.myblog.util.MyUtils.getIpAddr;
 
 /**
  * @Author: stone

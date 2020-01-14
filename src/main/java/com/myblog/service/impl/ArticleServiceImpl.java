@@ -135,7 +135,8 @@ public class ArticleServiceImpl implements ArticleService {
 
 	@Override
 	public Article getLastUpdateArticle() {
-		return null;
+
+		return articleMapper.getLastUpdateArticle();
 	}
 
 	@Override
