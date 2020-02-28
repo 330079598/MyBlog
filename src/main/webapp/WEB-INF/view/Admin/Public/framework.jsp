@@ -2,7 +2,8 @@
   @Author: stone
   @Date: 2020/01/11 22:06:19
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -15,7 +16,7 @@
     <link rel="shortcut icon" href="/img/logo.jpg">
     <title>
         ${options.optionSiteTitle}后台
-            <rapid:block name="title"></rapid:block>
+        <rapid:block name="title"></rapid:block>
     </title>
     <link rel="stylesheet" href="/plugin/layui/css/layui.css">
     <link rel="stylesheet" href="/css/back.css">
@@ -63,7 +64,7 @@
     <div class="layui-side layui-bg-black">
         <div class="layui-side-scroll">
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">文章</a>
                     <dl class="layui-nav-child">
@@ -132,7 +133,8 @@
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © <a href="http://blog.liuyanzhao.com">Stone Blog</a> 人啊，一定要有信仰！ <a href="https://liuyanzhao.com/bulletin/my-service/" target="_blank">有偿服务</a>
+        © <a href="http://blog.liuyanzhao.com">Stone Blog</a> 人啊，一定要有信仰！ <a
+            href="https://liuyanzhao.com/bulletin/my-service/" target="_blank">有偿服务</a>
     </div>
 </div>
 
