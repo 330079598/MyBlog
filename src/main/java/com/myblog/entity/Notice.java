@@ -16,17 +16,31 @@ import java.util.Date;
 public class Notice implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private Integer noticeId;
+	private Integer optionId;
 
-	private String noticeTitle;
+	private String optionSiteTitle;
 
-	private String noticeContent;
+	private String optionSiteDescrption;
 
-	private Date noticeCreateTime;
+	private String optionMetaDescrption;
 
-	private Date noticeUpdateTime;
+	private String optionMetaKeyword;
 
-	private Integer noticeStatus;
+	private String optionAboutsiteAvatar;
 
-	private Integer noticeOrder;
+	private String optionAboutsiteTitle;
+
+	private String optionAboutsiteContent;
+
+	private String optionAboutsiteWechat;
+
+	private String optionAboutsiteQq;
+
+	private String optionAboutsiteGithub;
+
+	private String optionAboutsiteWeibo;
+
+	private String optionTongji;
+
+	private Integer optionStatus;
 }

@@ -4,6 +4,7 @@ import com.myblog.entity.Options;
 import com.myblog.mapper.OptionsMapper;
 import com.myblog.service.OptionsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -27,12 +28,14 @@ public class OptionsServiceImpl implements OptionsService {
 	}
 
 	@Override
+	@CacheEvict(value = "default", key = "'options'")
 	public void insertOptions(Options options) {
-
+		optionsMapper.insert(options);
 	}
 
 	@Override
+	@CacheEvict(value = "default", key = "'options'")
 	public void updateOptions(Options options) {
-
+		optionsMapper.update(options);
 	}
 }

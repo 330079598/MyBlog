@@ -8,6 +8,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="rapid" uri="http://www.rapid-framework.org.cn/rapid" %>
+<%@ page isELIgnored="false" %>
+<!-- 防止EL表达式不显示! -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>

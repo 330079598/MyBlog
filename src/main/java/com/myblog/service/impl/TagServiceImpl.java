@@ -32,10 +32,6 @@ public class TagServiceImpl implements TagService {
 		return tagMapper.countTag();
 	}
 
-	@Override
-	public List<Tag> listTag() {
-		return null;
-	}
 
 	@Override
 	public List<Tag> listTagWithCount() {
@@ -70,5 +66,17 @@ public class TagServiceImpl implements TagService {
 	@Override
 	public List<Tag> listTagByArticleId(Integer articleId) {
 		return null;
+	}
+
+	@Override
+	public List<Tag> listTag() {
+		List<Tag> tagList = null;
+		try {
+			tagList = tagMapper.listTag();
+		} catch (Exception e) {
+			e.printStackTrace();
+			log.error("获得所有标签失败,cause{]", e);
+		}
+		return tagList;
 	}
 }

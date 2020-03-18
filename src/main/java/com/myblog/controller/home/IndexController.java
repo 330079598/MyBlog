@@ -78,21 +78,26 @@ public class IndexController {
 		PageInfo<Article> articlePageInfo = articleService.pageArticle(pageIndex, pageSize, criteria);
 		model.addAttribute("pageInfo", articlePageInfo);
 
+		//文章列表
+		PageInfo<Article> articleList = articleService.pageArticle(pageIndex, pageSize, criteria);
+		model.addAttribute("pageInfo", articleList);
+
+		//公告
+		List<Notice> noticeList = noticeService.listNotice(NoticeStatus.NORMAL.getValue());
+		model.addAttribute("noticeList", noticeList);
+		//友情链接
+		List<Link> linkList = linkService.listLink(LinkStatus.NORMAL.getValue());
+		model.addAttribute("linkList", linkList);
+
 		//侧边栏显示
 		//标签列表显示
 		List<Tag> allTagList = tagService.listTag();
 		model.addAttribute("allTagList", allTagList);
-		//获得随机文章
-		List<Article> randomArticleList = articleService.listRandomArticle(8);
-		model.addAttribute("randomArticleList", randomArticleList);
-		//获得热评文章
-		List<Article> mostCommentArticleList = articleService.listArticleByCommentCount(8);
-		model.addAttribute("mostCommentArticleList", mostCommentArticleList);
 		//最新评论
 		List<Comment> recentCommentList = commentService.listRecentComment(10);
 		model.addAttribute("recentCommentList", recentCommentList);
-		model.addAttribute("pageUrlPrefix", "/search?pageIndex");
-		return "Home/Page/search";
+		model.addAttribute("pageUrlPrefix", "/article?pageIndex");
+		return "Home/index";
 	}
 
 	@RequestMapping("/404")
