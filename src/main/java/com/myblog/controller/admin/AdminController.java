@@ -31,21 +31,22 @@ import static com.myblog.util.MyUtils.getIpAddr;
  * @ClassName: AdminController
  * @Description:
  **/
-
 @Controller
 public class AdminController {
 
 	@Autowired(required = false)
 	private UserService userService;
 
-	@Autowired(required = false)
+	@Autowired
 	private ArticleService articleService;
 
-	@Autowired(required = false)
+	@Autowired
 	private CommentService commentService;
 
 	/**
 	 * 后台首页
+	 *
+	 * @return
 	 */
 	@RequestMapping("/admin")
 	public String index(Model model) {
@@ -60,6 +61,8 @@ public class AdminController {
 
 	/**
 	 * 登录页面显示
+	 *
+	 * @return
 	 */
 	@RequestMapping("/login")
 	public String loginPage() {
@@ -67,7 +70,11 @@ public class AdminController {
 	}
 
 	/**
-	 * 验证登录
+	 * 登录验证
+	 *
+	 * @param request
+	 * @param response
+	 * @return
 	 */
 	@RequestMapping(value = "/loginVerify", method = RequestMethod.POST)
 	@ResponseBody
@@ -112,11 +119,16 @@ public class AdminController {
 
 	/**
 	 * 退出登录
+	 *
+	 * @param session
+	 * @return
 	 */
 	@RequestMapping(value = "/admin/logout")
-	public String logout(HttpSession session){
+	public String logout(HttpSession session) {
 		session.removeAttribute("user");
 		session.invalidate();
 		return "redirect:/login";
 	}
+
+
 }
