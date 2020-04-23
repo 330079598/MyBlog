@@ -7,21 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd1a8377-a7d4-42b0-a421-8cfd3a65f13a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myblog/controller/home/LinkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myblog/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Admin/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Admin/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Myblog.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Myblog.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Myblog.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Myblog/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Myblog/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Myblog/WEB-INF/classes/META-INF/Myblog.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Myblog/WEB-INF/classes/com/myblog/controller/admin/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Myblog/WEB-INF/classes/com/myblog/controller/admin/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Myblog/WEB-INF/view/Admin/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Myblog/WEB-INF/view/Admin/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Myblog.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myblog/controller/admin/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myblog/controller/admin/AdminController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,6 +338,8 @@
       <workItem from="1585233623377" duration="4723000" />
       <workItem from="1585738548084" duration="625000" />
       <workItem from="1585787527731" duration="62000" />
+      <workItem from="1586076448316" duration="59000" />
+      <workItem from="1586077328565" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="update MyBlog">
       <created>1578919021429</created>
